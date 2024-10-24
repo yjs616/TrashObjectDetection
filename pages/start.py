@@ -73,12 +73,17 @@ def show_intro():
                 color: #333333;     /* 텍스트 색상 */
                 border-radius : 20px;
                 cursor : pointer;
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
             }}
 
             /*버튼 클릭할 때*/
             div.stButton > button:first-child:active{{
                 background-color : #F3FFE7;
                 color: #333333;     /* 텍스트 색상 */
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            }}
+            .custom-button:focus {{
+                outline: none;
             }}
 
             /* 반응형 미디어 쿼리 (화면 너비 768px 이하) */
@@ -137,9 +142,10 @@ def show_intro():
         #)
 
         #st.button에 커스텀 버튼 적용
-        if st.button("시작"):
+        if st.button("시작!"):
             st.session_state.page='next' #페이지 상태 변경
-            st.experimental_rerun() #페이지 즉시 새로고침
+            #st.experimental_rerun() #페이지 즉시 새로고침
+            st.rerun() 
 
 def show_next_page():
     import second
