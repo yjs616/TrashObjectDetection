@@ -26,13 +26,13 @@ def show_intro():
             /* 말풍선 이미지 배경 스타일 */
             .speech-bubble {{
                 width: 300px;
-                height: 150px;
+                height: 200px;
                 position : absolute;
                 top : 200px;
                 left: 30%;
                 transform: translateX(-50%);
                 background-image: url({bubble_image_url});
-                background-size: contain;
+                background-size: 100% 100%;
                 background-repeat: no-repeat;
                 background-position: center;
                 padding: 20px;       
@@ -54,15 +54,15 @@ def show_intro():
             /*폰트*/
             .speech-bubble-text {{
                 font-family: 'Gowun Dodum', sans-serif;
-                font-size: 24px;    /* 텍스트 크기 증가 */
+                font-size: 30px;    /* 텍스트 크기 증가 */
                 color: #333333;     /* 텍스트 색상 */
             }}
 
             /*버튼*/
-            div.stButton > button:first-child{{
+            div.stButton > button:first-child{{   
                 width : 600px;
-                position : absolute;
-                top : 850px; 
+                position : relative;
+                top : 750px; 
                 left : 50%;
                 transform: translateX(-50%);
                 background-color : #92BA83;
@@ -85,6 +85,7 @@ def show_intro():
             .custom-button:focus {{
                 outline: none;
             }}
+
 
             /* 반응형 미디어 쿼리 (화면 너비 768px 이하) */
             @media (max-width: 768px) {{
@@ -109,6 +110,7 @@ def show_intro():
                     font-size: 18px;     /* 버튼 텍스트 크기 조정 */
                     top: 550px;        /* 하단에서 더 위로 */
                 }}
+
             }}
         
             </style>
@@ -141,19 +143,29 @@ def show_intro():
         #    unsafe_allow_html=True
         #)
 
+
         #st.button에 커스텀 버튼 적용
         if st.button("시작!"):
             st.session_state.page='next' #페이지 상태 변경
-            #st.experimental_rerun() #페이지 즉시 새로고침
             st.rerun() 
 
-def show_next_page():
-    import second
-    #st.experimental_rerun()  # 페이지 즉시 새로고침
-    second.load_second_page() 
+        if st.button("도움말💡"):
+            st.session_state.page='help'
+            st.rerun()
 
-if st.session_state.page=='intro':
-    show_intro()
-elif st.session_state.page == 'next':
-    show_next_page()
+#def show_next_page():
+#    import second
+#    #st.experimental_rerun()  # 페이지 즉시 새로고침
+#    second.load_second_page()
+
+#def show_camera_action():
+#    import camera
+#    camera.show_camera_action() 
+
+#if st.session_state.page=='intro':
+#    show_intro()
+#elif st.session_state.page == 'next':
+#    show_next_page()
+#elif st.session_state.page=='camera_action':
+#    show_camera_action()
 
