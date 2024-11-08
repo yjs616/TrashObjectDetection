@@ -1,0 +1,52 @@
+{
+    "General trash": {
+        "name": "일반 쓰레기",
+        "description": "음식물이 묻은 비닐이나 플라스틱, 이물질이 묻은 재활용품은 일반 쓰레기로 분류합니다. 종량제 봉투에 담아 지정된 장소에 배출하세요. 날카로운 물건은 신문지에 잘 싸서 버려주세요.",
+        "image_path": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FddqkJk%2FbtsKhKEzKW8%2F9qhPVLoV0kdXaWe456K4Ak%2Fimg.png"
+    },
+    "Paper": {
+        "name": "종이",
+        "description": "신문, 책, 노트 등은 물기에 젖지 않게 묶어서 배출하세요. 스프링은 제거하고, 테이프나 스테이플러 심도 최대한 제거해 주세요. 비닐 코팅된 광고지, 영수증은 일반 쓰레기로 배출합니다.",
+        "image_path": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbb8acI%2FbtsKg6Iq5ok%2FRU3S1rpmKK6Oz8ZuYLCA3k%2Fimg.png"
+    },
+    "Paper pack": {
+        "name": "종이팩",
+        "description": "우유팩, 주스팩 등은 내용물을 비우고 물로 헹군 후 말려주세요. 이물질이 묻지 않도록 하고, 찌그러뜨려 펼쳐서 배출하세요. 빨대, 비닐 등은 제거하고 배출합니다.",
+        "image_path": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fo2pXZ%2FbtsKgLYZ34d%2FFRql57HV7sReal5joKxHW1%2Fimg.png"
+    },
+    "Metal": {
+        "name": "금속",
+        "description": "금속 캔은 내용물을 비우고 물로 헹군 후 가능한 압착해서 배출하세요. 캔 뚜껑은 안쪽으로 넣어 버리고, 부탄가스통은 구멍을 뚫어 내용물을 비운 후 배출합니다. 알루미늄 호일은 일반 쓰레기로 배출하세요.",
+        "image_path": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FNZ1y7%2FbtsKh0mR7at%2FwcJ7dB0L2cKpH4mZlew0Qk%2Fimg.png"
+    },
+    "Glass": {
+        "name": "유리",
+        "description": "유리병은 내용물을 비우고 물로 헹군 후 배출하세요. 병뚜껑은 제거하고, 라벨이 있다면 제거 가능한 것은 제거해 주세요. 깨진 유리는 신문지에 싸서 일반 쓰레기로 배출합니다. 도자기류는 유리가 아닙니다.",
+        "image_path": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb7Da7T%2FbtsKge1tiIY%2FNQX6OrUtEkLq3Pn1Uz2qKK%2Fimg.png"
+    },
+    "Plastic": {
+        "name": "플라스틱",
+        "description": "페트병은 라벨을 제거하고 내용물을 비운 후 가능한 압착해서 배출하세요. 뚜껑은 별도로 배출하고, 내용물이 남아있거나 이물질이 묻은 경우 깨끗이 씻어서 배출합니다. 플라스틱 용기는 다른 재질로 된 부분은 제거하고 배출하세요.",
+        "image_path": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fes5dG1%2FbtsKgO2i1hr%2FeVftETgyJ2D3FYCHBFViYK%2Fimg.png"
+    },
+    "Styrofoam": {
+        "name": "스티로폼",
+        "description": "스티로폼은 이물질(테이프, 운송장 등)을 완전히 제거하고 배출하세요. 컵라면 용기 등 음식물이 묻은 스티로폼은 깨끗이 씻어서 배출합니다. 오염되거나 이물질 제거가 어려운 경우 일반 쓰레기로 배출하세요.",
+        "image_path": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FrObgT%2FbtsKhKkic65%2Fk4LeSEWQQKreQnfdOYeNB0%2Fimg.png"
+    },
+    "Plastic bag": {
+        "name": "비닐봉지",
+        "description": "비닐봉지는 이물질을 제거하고 압착해서 모아 배출하세요. 음식물이나 이물질이 묻은 경우 깨끗이 씻어서 배출하고, 제거가 어려운 경우 일반 쓰레기로 배출합니다. 투명비닐과 일반비닐을 구분하여 배출하면 더욱 좋습니다.",
+        "image_path": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FGaS55%2FbtsKgJ06YdJ%2FvN8rElKASekk9JDwkmhHmK%2Fimg.png"
+    },
+    "Battery": {
+        "name": "배터리",
+        "description": "배터리는 절대 일반 쓰레기와 함께 버리지 마세요. 주변 전자제품 매장이나 마트의 배터리 수거함에 배출하세요. 충전식 배터리는 반드시 방전시켜 배출하고, 카메라나 휴대폰 배터리도 같은 방법으로 배출합니다.",
+        "image_path": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbYnC4d%2FbtsKghjy8an%2Fsd7r3aPJafvy4TKGqTEKcK%2Fimg.png"
+    },
+    "Clothing": {
+        "name": "의류",
+        "description": "의류는 지자체 수거함이나 재활용 의류 수거함에 배출하세요. 젖은 옷이나 훼손이 심한 옷은 일반 쓰레기로 배출합니다. 재사용이 가능한 깨끗한 옷은 지역 복지관이나 의류 수거함에 기부하는 것을 추천합니다.",
+        "image_path": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbxT425%2FbtsKgBoEHhM%2F4c5xCVYd3zrMv4OBEGXPv0%2Fimg.png"
+    }
+}
