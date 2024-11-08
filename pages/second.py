@@ -1,4 +1,5 @@
 import streamlit as st
+#from pages import camera
 
 # Google Fonts의 Material Icons 사용
 st.markdown('<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">', unsafe_allow_html=True)
@@ -142,10 +143,12 @@ def load_second_page():
     # 버튼들 (컨테이너로 중앙 정렬)
     if st.button("알려줘!📝"):
         st.session_state.page = 'camera_info'  # 알려줘! 버튼 클릭 시
+        #camera.show_camera_info()
         st.rerun()
 
     if st.button("실전으로!🌍"):
         st.session_state.page = 'camera_action'  # 실전으로! 버튼 클릭 시
+        #camera.show_camera_action()
         st.rerun()
 
 
