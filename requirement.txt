@@ -1,1 +1,11 @@
 #필요한 패키지 나열
+
+python -c "import cv2; print(cv2.__version__)"      #1.24.0
+python -c 'import torch; print(torch.__version__);' #2.0.1+cu118
+python -c "import mmcv; print(mmcv.__version__)"
+python -c "import mmdet; print(mmdet.__version__)"
+python -c "import numpy; print(numpy.__version__)"  #4.10.0
+python -c "import cv2; print(cv2.__version__)"
+
+pip show mmcv-full #Version: 1.7.2
+pip show mmdet #Version: 3.3.0

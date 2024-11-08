@@ -1,0 +1,22 @@
+TrashObjectDetection/
+├── .git/
+├── app/
+│   ├── app.py
+│   └── app.txt
+├── assets/
+│   ├── assets.txt
+│   ├── character.png
+│   ├── sample.mp4
+│   ├── speechbubble.png
+│   └── test.mp4
+├── mmdetection/
+└── pages/
+    ├── camera.py
+    ├── help.py
+    ├── info.py
+    ├── second.py
+    └── start.py
+    └── class_info.json
+├── README.md
+├── requirement.txt
+└── tree.txt
