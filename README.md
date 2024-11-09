@@ -1,8 +1,23 @@
 # TrashObjectDetection
 Object Detection 프로젝트 진행 후 만든 데모입니다 🌏 🗑️
 
+
+## ObjectDetection Projects
+[💻More Information](https://github.com/boostcampaitech7/level2-objectdetection-cv-07)
+
+
 ## Demo
+### 1. 실시간 웹캠 객체 탐지
+```plaintext
+mmdetection/demo/streamlit_demo_webcam.py
+```
 [<img src="https://github.com/user-attachments/assets/08c83020-4e2e-4e25-b785-8be7164f4d16" width="800"/>](https://github.com/user-attachments/assets/4c7aceaa-c14a-4f63-b839-7bd55f4614f5)
+
+### 2. 실시간 비디오 객체 탐지
+```plaintext
+mmdetection/demo/streamlit_demo_mp4_3.py
+```
+[<img src="https://github.com/user-attachments/assets/31697004-9a6e-4a41-87a9-8efb08c39f03" width="800"/>](https://github.com/user-attachments/assets/31697004-9a6e-4a41-87a9-8efb08c39f03)
 
 
 ## Demo pages
@@ -36,15 +51,7 @@ streamlit==1.36.0
 mmengine==0.10.5
 ```
 
-## 실시간 웹캠 객체 탐지
-```plaintext
-mmdetection/demo/streamlit_demo_webcam.py
-```
 
-## 실시간 비디오 객체 탐지
-```plaintext
-mmdetection/demo/streamlit_demo_mp4_3.py
-```
 
 ## Tree
 ```plaintext
