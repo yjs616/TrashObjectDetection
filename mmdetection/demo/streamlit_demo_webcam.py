@@ -81,7 +81,7 @@ def display_class_info(detected_class, info_area):
     else:
         info_area.markdown("알 수 없는 객체입니다.")
 
-def show_real_time_detection(config_path, checkpoint_path):
+def show_real_time_detection(config_path, checkpoint_path, show_info=True):
     apply_css()
     st.markdown("<h1 class='title-text'>지구 지키는 중 🌏</h1>", unsafe_allow_html=True)
 
@@ -102,6 +102,20 @@ def show_real_time_detection(config_path, checkpoint_path):
     visualizer = VISUALIZERS.build(model.cfg.visualizer)
     visualizer.dataset_meta = metainfo
 
+    # 클래스 ID와 한국어 이름 매핑
+    class_name_mapping = {
+        "General trash": "일반쓰레기 🗑️",
+        "Paper": "종이 📃",
+        "Paper pack": "종이팩 🧃",
+        "Metal": "금속🥫",
+        "Glass": "유리🍸",
+        "Plastic": "플라스틱 🗑️",
+        "Styrofoam": "스티로폼 🗑️",
+        "Plastic bag": "비닐봉지 🗑️",
+        "Battery": "배터리 🔋",
+        "Clothing": "의류 👕"
+    }
+
     # 웹캠 설정
     cap = cv2.VideoCapture(0)
 
@@ -112,6 +126,11 @@ def show_real_time_detection(config_path, checkpoint_path):
     stframe = st.empty()  # Streamlit 프레임 생성
     detected_text = st.empty()  # 객체 이름을 표시할 텍스트 공간
     info_area = st.empty()  # 객체 정보를 표시할 고정 공간
+
+    if st.button("뒤로가기 🔙", key="back_button"):
+        st.session_state.page = 'next'
+        st.rerun()
+        return
 
     while cap.isOpened():
         ret, frame = cap.read()
@@ -130,8 +149,12 @@ def show_real_time_detection(config_path, checkpoint_path):
         if len(detected_objects) == 1:
             class_id = int(detected_objects[0].labels)
             class_name = visualizer.dataset_meta['classes'][class_id]
-            detected_text.markdown(f"<h2 class='detected-object-text'>{class_name}</h2>", unsafe_allow_html=True)
-            display_class_info(class_name, info_area)  # 객체 정보 업데이트
+            korean_name = class_name_mapping.get(class_name, "알 수 없는 객체")
+            detected_text.markdown(f"<h2 class='detected-object-text'>{korean_name}</h2>", unsafe_allow_html=True)
+            #display_class_info(class_name, info_area)  # 객체 정보 업데이트
+            if show_info:
+                display_class_info(class_name, info_area)  # 객체 정보 업데이트
+
 
         elif len(detected_objects) > 1:
             detected_text.markdown("<h2 class='detected-object-text'>한 개만 보여주세요!</h2>", unsafe_allow_html=True)
