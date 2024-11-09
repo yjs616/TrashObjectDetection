@@ -1,7 +1,7 @@
 numpy==1.26.4
-opencv-python-headless==4.10.0.84
-torch==2.1.0
-mmcv==2.0.0
+opencv-python==4.10.0.84
+torch==2.5.0
+mmcv==2.1.0
 mmdet==3.3.0
 streamlit==1.36.0
 mmengine==0.10.5
