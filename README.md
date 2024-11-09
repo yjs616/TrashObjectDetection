@@ -36,6 +36,16 @@ streamlit==1.36.0
 mmengine==0.10.5
 ```
 
+## 실시간 웹캠 객체 탐지
+```plaintext
+mmdetection/demo/streamlit_demo_webcam.py
+```
+
+## 실시간 비디오 객체 탐지
+```plaintext
+mmdetection/demo/streamlit_demo_mp4_3.py
+```
+
 ## Tree
 ```plaintext
 TrashObjectDetection/
